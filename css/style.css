@@ -80,6 +80,11 @@
     border-bottom: 1px solid gray;
 }
 
+.main .work-duration {
+    font-size: 13px;
+    color: #585dff;
+}
+
 .footer {
     width: 1000px;
     margin: 0 auto;
