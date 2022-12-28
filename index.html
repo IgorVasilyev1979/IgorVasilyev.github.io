@@ -3,70 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Business card site</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Васильев Игорь. Разработчик</h1>
+    <header class="header">
+        <a href="#about_me" class="menu-text">Обо мне</a>
+        <a href="#education" class="menu-text">Образование</a>
+        <a href="#work_experience" class="menu-text">Опыт работы</a>
+        <a href="#hobby" class="menu-text">Хобби</a>
+        <a href="#How_i_became_a_developer" class="menu-text">Как я становился разработчиком</a>
+        <a href="#contacts" class="menu-text">Контакты</a>
     </header>
-    <main>        
-        <img src="img/myfoto.jpg" alt="Моё фото">
-        <hr>
-        <h2>Обо мне</h2>
-        <p>
+    <main class="main"> 
+        <h1 class="main-header">Васильев Игорь. Разработчик</h1>
+        <div class="img-wrapper">
+            <img class="img" src="img/myfoto.jpg" alt="Моё фото">  
+        </div>
+        <h2 id="about_me" class="h2">Обо мне</h2>
+        <p class="paragraph paragraph-divider">
             Здоровый образ жизни и самореализация в работе - мои приоритеты.
         </p>
-        <hr>
-        <h2>Образование</h2>
-        <p>Инженер по специальности <q>Радиотехника</q>, НовГУ имени Ярослава Мудрого</p>
-        <hr>
-        <h2>Опыт работы</h2>
-        <h3>ПАО "Мстатор"</h3>
-        <h4>Инженер-электронщик</h4>
-        <p>
-            Разработка, изготовление, монтаж, пуско-наладочные работы электрических схем с<br>
-            применением микроконтроллеров и промышленных логических контроллеров(ПЛК).<br>
-            Разработка и отладка программного обеспечения микроконтроллеров и ПЛК.
+        <h2 id="education" class="h2">Образование</h2>
+        <p class="paragraph paragraph-divider">
+            Инженер по специальности <q>Радиотехника</q>, НовГУ имени Ярослава Мудрого
         </p>
-        <h3>АО "Боровичский комбинат огнеупоров"</h3>
-        <h4>Инженер-программист АСУ ТП</h4>
-        <p>
-            Разработка программного обеспечения промышленных логических контроллеров(ПЛК)<br>
-            Siemens, пусконаладочные работы оборудования с применением ПЛК Siemens. Разработка и<br>
-            корректировка имеющегося программного обеспечения верхнего уровня(сбор данных и<br>
+        <h2 id="work_experience" class="h2">Опыт работы</h2>
+        <div class="h-wrapper">
+            <h3 class="h3">АО "Боровичский комбинат огнеупоров"</h3>
+            <h4 class="h4">Инженер-программист АСУ ТП</h4>
+        </div>
+        <p class="paragraph">
+            Разработка программного обеспечения промышленных логических контроллеров(ПЛК)
+            Siemens, пусконаладочные работы оборудования с применением ПЛК Siemens. Разработка и
+            корректировка имеющегося программного обеспечения верхнего уровня(сбор данных и
             запись в базы данных).
         </p>
-        <h3>АО "Мстатор"</h3>
-        <h4>Инженер-электронщик</h4>
-        <p>
-            Разработка, изготовление, монтаж, пуско-наладочные работы электрических схем с<br>
-            применением микроконтроллеров. Разработка и отладка программного обеспечения<br>
+        <div class="h-wrapper">
+            <h3 class="h3">АО "Мстатор"</h3>
+            <h4 class="h4">Инженер-электронщик</h4>
+        </div>    
+        <p class="paragraph paragraph-divider">
+            Разработка, изготовление, монтаж, пуско-наладочные работы электрических схем с
+            применением микроконтроллеров. Разработка и отладка программного обеспечения
             микроконтроллеров.
         </p>
-        <hr>
-        <h2>Хобби</h2>
-        <p>
-            <ul>
-                <li>Настольный теннис</li>
-                <li>Формула-1</li>
-                <li>Кулинария</li>
-                <li>Фотография</li>
-            </ul>
-        </p>
-        <hr>
-        <h2>Как я становился разработчиком</h2>
-        <ul>
+        <h2 id="hobby" class="h2">Хобби</h2>
+        <ul class="hobby-list">
+            <li>Настольный теннис</li>
+            <li>Формула-1</li>
+            <li>Кулинария</li>
+            <li>Фотография</li>
+        </ul>
+        <h2 id="How_i_became_a_developer" class="h2">Как я становился разработчиком</h2>
+        <ul class="hobby-list">
             <li>21.12.2022 - начал изучение курса <q>Фронтенд-разработчик</q> от Skillfactory</li>
             <li></li>
             <li></li>
             <li></li>
         </ul>
     </main>
-    <hr>
-    <footer>
-        <h2>Контакты</h2>
-        <p>Телефон: <a href="tel:+7(123)456-78-90">+7(123)456-78-90</a></p>
-        <p>E-mail: <a href="mailto:vasilyev.i.b@gmail.com">vasilyev.i.b@gmail.com</a></p>
-        <p>Социальные сети: <a href="https://vk.com/id631590805">ВКонтакте</a></p>
+    <footer class="footer">
+        <h2 id="contacts" class="h2">Контакты</h2>
+        <div class="contacts">
+            <p class="phone">Телефон: <a href="tel:+7(123)456-78-90" class="anchor">+7(123)456-78-90</a></p>
+            <p>E-mail: <a href="mailto:vasilyev.i.b@gmail.com" class="anchor">vasilyev.i.b@gmail.com</a></p>
+            <p>Социальные сети: <a href="https://vk.com/id631590805" class="anchor">ВКонтакте</a></p>
+        </div>
     </footer>
 </body>
 </html>
