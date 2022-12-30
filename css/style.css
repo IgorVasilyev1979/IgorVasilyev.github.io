@@ -1,7 +1,28 @@
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans Italic";
+    src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: "SourceSerifPro Regular";
+    src: url(../fonts/SourceSerifPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SourceSerifPro Italic";
+    src: url(../fonts/SourceSerifPro-Italic.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "OpenSans Regular", Helvetica, Arial, sans-serif;
 }
 
 .header {
@@ -17,6 +38,7 @@
     color:brown;
     transition: background-color 0.2s;
     text-decoration: none;
+    font-family: "OpenSans Italic", Helvetica, Arial, sans-serif;
 }
 
 .menu-text:hover {
@@ -24,6 +46,7 @@
 }
 
 .main {
+    display: flex;
     width: 1000px;
     margin: 0 auto;
 }
@@ -32,12 +55,14 @@
     text-align: center;
     padding-top: 15px;
     color: #5b661f;
+    font-family: "SourceSerifPro Regular", serif;
 }
 
 .main .img-wrapper {
+    height: 492px;
     margin-top: 20px;
     padding: 20px;
-    background-color: #45b0c5c4;
+    background-color: #9ee3c2;
     border: 1px solid black;
 }
 
@@ -46,18 +71,15 @@
     margin: 0 auto;    
 }
 
-.main .h2 {
+.h2 {
     color: #0e31dd;
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: center;
+    font-family: "SourceSerifPro Italic", serif;
 }
 
 .main .paragraph {
-    padding: 12px 40px 20px;
-}
-
-.main .paragraph-divider {
-    border-bottom: 1px solid gray;
+    padding: 0px 40px 20px;
 }
 
 .main .h-wrapper {
@@ -67,7 +89,6 @@
 .main .h3 {
     font-size: 16px;
     color: #4278bb;
-    padding-top: 12px;
 }
 
 .main .h4 {
@@ -76,8 +97,7 @@
 }
 
 .main .hobby-list {
-    padding: 12px 100px 20px;
-    border-bottom: 1px solid gray;
+    padding: 0px 100px 20px;
 }
 
 .main .work-duration {
@@ -88,28 +108,38 @@
 .footer {
     width: 1000px;
     margin: 0 auto;
+    margin-bottom: 5px;
     background-color: #dddcdc;
-    padding-top: 25px;
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
+    padding: 15px 0;
+    border: 1px solid gray;
 }
 
 .footer .h2 {
     color: #0e31dd;
     text-align: center;
+    margin-top: 0px;
 }
 
 .footer .phone {
     margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer .contacts {
     width: 300px;
-    text-align: center;
     margin: 0 auto;
 }
 
 .footer .anchor {
     text-decoration: none;
     color: #cd5959;
+}
+
+.footer .links {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
